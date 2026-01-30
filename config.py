@@ -3,7 +3,7 @@ import os
 # Configuration for the Sakha AI Bot
 # GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "YOUR_GEMINI_API_KEY") # Deprecated
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-DATASET_PATH = os.path.join(PROJECT_ROOT, "dataset_refined.json")
+DATASET_PATH = os.path.join(PROJECT_ROOT, "data", "dataset.json")
 MODEL_PATH = os.path.join(PROJECT_ROOT, "model_output")
 USE_LOCAL_MODEL = True
 

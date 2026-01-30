@@ -1,4 +1,4 @@
-from assistant import FastChatbot
+from core.chatbot import FastChatbot
 import config
 
 def test_full_chain():
