@@ -1,8 +1,11 @@
 import os
 
-# Configuration for the CustomerAssistantBot
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "YOUR_GEMINI_API_KEY")
-DATASET_PATH = "/Users/mr.bajrangi/Code/Company/Projects/CustomerAssistantBot/dataset_refined.json"
+# Configuration for the Sakha AI Bot
+# GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "YOUR_GEMINI_API_KEY") # Deprecated
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+DATASET_PATH = os.path.join(PROJECT_ROOT, "dataset_refined.json")
+MODEL_PATH = os.path.join(PROJECT_ROOT, "model_output")
+USE_LOCAL_MODEL = True
 
 # Search settings
 MAX_SEARCH_RESULTS = 3

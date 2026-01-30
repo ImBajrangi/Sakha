@@ -1,7 +1,5 @@
-venv/
 __pycache__/
-*.zip
 *.pyc
-.DS_Store
-*.resolved
-*.resolved.old
+venv/
+.env
+model_output/

@@ -10,9 +10,9 @@ from transformers import (
 from datasets import Dataset
 
 def train():
-    output_dir = "/Users/mr.bajrangi/Code/Company/Projects/CustomerAssistantBot/model_output"
+    output_dir = "/Users/mr.bajrangi/Code/Company/Projects/Sakha/model_output"
     model_name = "distilgpt2" 
-    dataset_path = "/Users/mr.bajrangi/Code/Company/Projects/CustomerAssistantBot/dataset_refined.json"
+    dataset_path = "/Users/mr.bajrangi/Code/Company/Projects/Sakha/dataset_refined.json"
 
     print("Loading raw dataset...")
     with open(dataset_path, 'r') as f:
@@ -72,7 +72,6 @@ def train():
     print("Setting up training arguments...")
     training_args = TrainingArguments(
         output_dir=output_dir,
-        overwrite_output_dir=True,
         num_train_epochs=50, 
         per_device_train_batch_size=8,
         save_strategy="no",
@@ -80,7 +79,7 @@ def train():
         learning_rate=5e-4,
         weight_decay=0.01,
         warmup_steps=100,
-        fp16=torch.cuda.is_available(), 
+        report_to="none",
     )
 
     print("Starting training...")

@@ -19,9 +19,11 @@ def test_personalization():
     response_overview = bot.get_response("overview: Who is Premanand Ji Maharaj?")
     print(f"Overview Response: {response_overview}\n")
 
+import config
+
 if __name__ == "__main__":
     # Ensure dataset exists before testing
-    if os.path.exists("/Users/mr.bajrangi/Code/Company/Projects/CustomerAssistantBot/dataset_refined.json"):
+    if os.path.exists(config.DATASET_PATH):
         test_personalization()
     else:
-        print("Dataset not found. Please check config.py")
+        print(f"Dataset not found at {config.DATASET_PATH}. Please check config.py")
