@@ -173,8 +173,8 @@
             "response": "Radhe Radhe! Brij Yatra is a sacred pilgrimage circuit of 84 Kos encompassing divine sites of Krishna's pastimes. Vrinda Tours provides a digital guide and map for this spiritual journey."
         },
         {
-            "instruction": "what is padhle",
-            "response": "Radhe Radhe! PadhLe is our professional PDF reading platform. It's designed as a digital sanctuary for focused reading and document analysis of spiritual and educational texts."
+            "instruction": "what is skillTadka",
+            "response": "Radhe Radhe! skillTadka is our professional PDF reading platform. It's designed as a digital sanctuary for focused reading and document analysis of spiritual and educational texts."
         },
         {
             "instruction": "what is chitra vrinda",
@@ -189,7 +189,7 @@
             "response": "Radhe Radhe! Opening Brij Yatra guides for you... [NAV: https://vrindopnishad.in/Projects/Vrinda-Tours/vrinda-tours.html]"
         },
         {
-            "instruction": "take me to padhle",
+            "instruction": "take me to skillTadka",
             "response": "Radhe Radhe! Navigating to your digital library... [NAV: https://edu.vrindopnishad.in/]"
         },
         {
@@ -198,7 +198,7 @@
         },
         {
             "instruction": "show all your websites",
-            "response": "Radhe Radhe! Here are our sacred digital spaces:\n- **Main Site**: [vrindopnishad.in](https://vrindopnishad.in/)\n- **Foody Vrinda**: [Pure Satvik Kitchen](https://vrindopnishad.in/Projects/Cloud-Kitchen/kitchen.html)\n- **Brij Yatra**: [Sacred Tours](https://vrindopnishad.in/Projects/Vrinda-Tours/vrinda-tours.html)\n- **PadhLe**: [Digital Library](https://edu.vrindopnishad.in/)"
+            "response": "Radhe Radhe! Here are our sacred digital spaces:\n- **Main Site**: [vrindopnishad.in](https://vrindopnishad.in/)\n- **Foody Vrinda**: [Pure Satvik Kitchen](https://vrindopnishad.in/Projects/Cloud-Kitchen/kitchen.html)\n- **Brij Yatra**: [Sacred Tours](https://vrindopnishad.in/Projects/Vrinda-Tours/vrinda-tours.html)\n- **skillTadka**: [Digital Library](https://edu.vrindopnishad.in/)"
         },
         {
             "instruction": "foody link foody website",
@@ -209,8 +209,8 @@
             "response": "Radhe Radhe! Explore our pilgrimage guides and maps here: [Vrinda Tours](https://vrindopnishad.in/Projects/Vrinda-Tours/vrinda-tours.html)"
         },
         {
-            "instruction": "padhle link padhle website",
-            "response": "Radhe Radhe! Your digital library sanctuary is here: [PadhLe Platform](https://edu.vrindopnishad.in/)"
+            "instruction": "skillTadka link skillTadka website",
+            "response": "Radhe Radhe! Your digital library sanctuary is here: [skillTadka Platform](https://edu.vrindopnishad.in/)"
         },
         {
             "instruction": "chitra vrinda link chitra website",

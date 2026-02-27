@@ -40,8 +40,8 @@ class FastChatbot:
             'tour': ('https://vrindopnishad.in/Projects/Vrinda-Tours/vrinda-tours.html', 'Vrinda Tours', 10),
             'tours': ('https://vrindopnishad.in/Projects/Vrinda-Tours/vrinda-tours.html', 'Vrinda Tours', 10),
             'yatra': ('https://vrindopnishad.in/Projects/Vrinda-Tours/vrinda-tours.html', 'Brij Yatra', 10),
-            'padhle': ('https://edu.vrindopnishad.in/', 'Padhle Library', 10),
-            'library': ('https://edu.vrindopnishad.in/', 'Padhle Library', 10),
+            'skillTadka': ('https://edu.vrindopnishad.in/', 'skillTadka Library', 10),
+            'library': ('https://edu.vrindopnishad.in/', 'skillTadka Library', 10),
             'chitra vrinda': ('https://vrindopnishad.in/Vrindopnishad%20Web/Pictures/main/Gallery.html', 'Chitra Vrinda', 15),
             'chitra': ('https://vrindopnishad.in/Vrindopnishad%20Web/Pictures/main/Gallery.html', 'Chitra Vrinda', 10),
             'art': ('https://vrindopnishad.in/Vrindopnishad%20Web/Pictures/main/Gallery.html', 'Chitra Vrinda', 10),
@@ -119,7 +119,7 @@ class FastChatbot:
         
         if is_followup:
             # Try to resolve subject from provided history first
-            brand_keywords = ['foody', 'padhle', 'chitra', 'vaani', 'kitchen', 'tour', 'yatra', 'social', 'media', 'instagram', 'youtube', 'whatsapp', 'facebook', 'vrindopnishad', 'links', 'handles', 'sakha', 'vrinda', 'brij', 'hariom', 'yash', 'dhani', 'krishna', 'radhe']
+            brand_keywords = ['foody', 'skillTadka', 'chitra', 'vaani', 'kitchen', 'tour', 'yatra', 'social', 'media', 'instagram', 'youtube', 'whatsapp', 'facebook', 'vrindopnishad', 'links', 'handles', 'sakha', 'vrinda', 'brij', 'hariom', 'yash', 'dhani', 'krishna', 'radhe']
             subject = self.last_subject
             
             if history:
@@ -157,7 +157,7 @@ class FastChatbot:
         self.last_query = raw_query 
 
         # 1. Classification: Is this about our brand?
-        brand_keywords = ['foody', 'padhle', 'chitra', 'vaani', 'kitchen', 'tour', 'yatra', 'social', 'media', 'instagram', 'youtube', 'whatsapp', 'facebook', 'vrindopnishad', 'links', 'handles', 'sakha', 'vrinda', 'brij', 'hariom', 'yash', 'dhani', 'krishna', 'radhe']
+        brand_keywords = ['foody', 'skillTadka', 'chitra', 'vaani', 'kitchen', 'tour', 'yatra', 'social', 'media', 'instagram', 'youtube', 'whatsapp', 'facebook', 'vrindopnishad', 'links', 'handles', 'sakha', 'vrinda', 'brij', 'hariom', 'yash', 'dhani', 'krishna', 'radhe']
         is_brand_query = any(k in clean_query.lower() for k in brand_keywords)
         # 2. Semantic Match Check
         query_embedding = self.semantic_model.encode(clean_query, convert_to_tensor=True)
@@ -233,8 +233,8 @@ class FastChatbot:
                     response_text = "Radhe Radhe! I'm not sure about that. Are you looking for Brij Yatra guides? You can say 'open vrinda tours'."
                 elif self.last_subject in ['art', 'chitra', 'gallery']:
                     response_text = "Radhe Radhe! I'm not sure about that. Want to explore our divine artwork? Just say 'open chitra vrinda'."
-                elif self.last_subject == 'padhle':
-                    response_text = "Radhe Radhe! I'm not sure about that. Need some spiritual reading? Say 'visit padhle library'."
+                elif self.last_subject == 'skillTadka':
+                    response_text = "Radhe Radhe! I'm not sure about that. Need some spiritual reading? Say 'visit skillTadka library'."
                 else:
                     response_text = "Radhe Radhe! I'm still learning and don't have an answer for that yet. How can I help you with our Sattvic kitchen, spiritual art, or Vrinda Tours?"
 
